@@ -1,0 +1,155 @@
+<!-- ======================================================================= -->
+<!-- FILE: index.html (ГОЛОВНИЙ ФАЙЛ)                                        -->
+<!-- ======================================================================= -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Socrates: A New Vision for Netflix</title>
+    <!-- Підключення зовнішніх скриптів та шрифтів -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Підключення нашого файлу зі стилями -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-black">
+
+    <!-- Хедер -->
+    <header class="fixed top-0 left-0 right-0 bg-black/50 backdrop-blur-md p-4 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-2xl font-black text-red-600">SOCRATES</h1>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-bold">
+                <a href="#problem" data-key="nav_problem" class="hover:text-red-500 transition">Problem</a>
+                <a href="#solution" data-key="nav_solution" class="hover:text-red-500 transition">Solution</a>
+                <a href="#demo" data-key="nav_demo" class="hover:text-red-500 transition">Demo</a>
+                <a href="#value" data-key="nav_value" class="hover:text-red-500 transition">Value</a>
+            </nav>
+            <div class="lang-switcher text-sm font-medium">
+                <button data-lang="en" class="active px-2 py-1">EN</button>
+                <span>/</span>
+                <button data-lang="pl" class="px-2 py-1">PL</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секція 1: Герой -->
+        <section id="hero" class="hero-bg min-h-screen flex items-center">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="w-full md:w-2/3 lg:w-1/2">
+                    <h2 data-key="hero_title" class="text-4xl md:text-6xl font-black leading-tight">More than just entertainment.</h2>
+                    <p data-key="hero_subtitle" class="mt-4 text-xl text-gray-300">The "Socrates" concept transforms passive Netflix viewing into an active process of learning and self-development.</p>
+                    <a href="#problem" data-key="hero_button" class="mt-8 inline-block bg-red-600 text-white font-bold px-8 py-3 rounded-md hover:bg-red-700 transition text-lg">Learn more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція 2: Проблема -->
+        <section id="problem" class="py-20 bg-black">
+            <div class="container mx-auto px-6 md:px-12 text-center fade-in-section">
+                <h3 data-key="problem_title" class="text-3xl md:text-4xl font-bold">A problem everyone knows</h3>
+                <p data-key="problem_subtitle" class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">Modern streaming services offer endless choice, but this creates new challenges.</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <div class="bg-gray-800 p-8 rounded-lg h-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" /></svg>
+                        <h4 data-key="problem_card1_title" class="text-xl font-bold mt-4">Choice Paralysis</h4>
+                        <p data-key="problem_card1_text" class="mt-2 text-gray-400">We spend more time searching than watching, and end up watching nothing at all.</p>
+                    </div>
+                    <div class="text-5xl font-bold text-red-600 transform rotate-90 md:rotate-0">→</div>
+                    <div class="bg-gray-800 p-8 rounded-lg h-full highlight-problem-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        <h4 data-key="problem_card3_title" class="text-xl font-bold mt-4">The Feeling of Wasted Time</h4>
+                        <p data-key="problem_card3_text" class="mt-2 text-gray-200">The guilt from hours spent on shows instead of investing time in self-development. **This is the problem we are solving.**</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція 3: Рішення -->
+        <section id="solution" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 fade-in-section">
+                <div class="w-full md:w-1/2">
+                    <h3 data-key="solution_title" class="text-3xl md:text-4xl font-bold">The Solution: Integration, Not Segregation</h3>
+                    <p data-key="solution_text1" class="mt-4 text-lg text-gray-300">"Socrates" is not a separate website, but a new layer of analytics and functionality seamlessly built into the familiar Netflix interface. We don't force users to change their habits — we enrich them.</p>
+                    <p data-key="solution_text2" class="mt-4 text-lg text-gray-300">Our system analyzes film scripts to identify key educational themes, skills, and life lessons, then presents this information to the user at the moment of choice.</p>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <img src="https://placehold.co/600x400/111827/FFFFFF?text=Integration+Concept" alt="Integration Concept" class="rounded-lg shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція 4: Інтерактивне демо -->
+        <section id="demo" class="py-20 bg-black">
+            <div class="container mx-auto px-6 md:px-12 fade-in-section">
+                <h3 data-key="demo_title" class="text-3xl md:text-4xl font-bold text-center">How It Works: Interactive Mockup</h3>
+                <p data-key="demo_subtitle" class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto text-center">Below is an interactive simulation of the Netflix interface with the "Socrates" feature integrated. Click on a movie.</p>
+                <div class="mt-12 bg-gray-900 p-4 md:p-8 rounded-lg">
+                    <h4 data-key="demo_shelf_title" class="text-2xl font-bold mb-4">Learn & Get Inspired</h4>
+                    <div class="flex space-x-4 overflow-x-auto pb-4 -mx-4 px-4">
+                        <div class="film-card flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 relative cursor-pointer group" data-id="big-short">
+                            <img src="https://placehold.co/400x600/111827/FFFFFF?text=The+Big+Short" class="rounded-lg w-full transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2 right-2 bg-yellow-400 text-black text-xl rounded-full h-8 w-8 flex items-center justify-center font-bold">💡</div>
+                            <p data-key="film1_tagline" class="text-xs mt-2 text-gray-400">Learn how financial markets work.</p>
+                        </div>
+                        <div class="film-card flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 relative cursor-pointer group" data-id="steve-jobs">
+                            <img src="https://placehold.co/400x600/111827/FFFFFF?text=Steve+Jobs" class="rounded-lg w-full transform group-hover:scale-105 transition-transform duration-300">
+                            <div class="absolute top-2 right-2 bg-yellow-400 text-black text-xl rounded-full h-8 w-8 flex items-center justify-center font-bold">💡</div>
+                             <p data-key="film2_tagline" class="text-xs mt-2 text-gray-400">Explore lessons in leadership and innovation.</p>
+                        </div>
+                         <div class="film-card flex-shrink-0 w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5 relative cursor-pointer group" data-id="bills-brain">
+                            <img src="https://placehold.co/400x600/111827/FFFFFF?text=Inside+Bill's+Brain" class="rounded-lg w-full transform group-hover:scale-105 transition-transform duration-300">
+                             <div class="absolute top-2 right-2 bg-yellow-400 text-black text-xl rounded-full h-8 w-8 flex items-center justify-center font-bold">💡</div>
+                            <p data-key="film3_tagline" class="text-xs mt-2 text-gray-400">Learn systematic problem-solving.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секція 5: Цінність -->
+        <section id="value" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 md:px-12 fade-in-section">
+                <h3 data-key="value_title" class="text-3xl md:text-4xl font-bold text-center">Value for Everyone</h3>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <h4 data-key="value_user_title" class="text-2xl font-bold text-center">For the User</h4>
+                        <ul class="mt-6 space-y-4">
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_user1">Education and self-development in a convenient format.</span></li>
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_user2">Time saved and reduced "choice paralysis".</span></li>
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_user3">A deeper emotional connection with the content.</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-lg">
+                        <h4 data-key="value_biz_title" class="text-2xl font-bold text-center">For Netflix</h4>
+                         <ul class="mt-6 space-y-4">
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_biz1">Reduced customer churn.</span></li>
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_biz2">Increased engagement and time spent in the service.</span></li>
+                            <li class="flex items-center"><svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg><span data-key="value_biz3">Unique market advantage and positive PR.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-black py-8 text-center text-gray-500">
+        <p data-key="footer_concept">"Project Socrates" Concept.</p>
+        <p data-key="footer_disclaimer" class="text-sm mt-2">This website is a demonstration project and is not affiliated with Netflix.</p>
+    </footer>
+
+    <!-- Модальне вікно -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden p-4">
+        <div class="bg-gray-800 rounded-lg w-full md:w-2/3 lg:w-1/2 max-h-[90vh] overflow-y-auto">
+            <div id="modal-content" class="p-6 md:p-8"></div>
+        </div>
+    </div>
+
+    <!-- Підключення нашого файлу з JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
