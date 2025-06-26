@@ -1,5 +1,5 @@
 /* ======================================================================= */
-/* FILE: assets/js/main.js (ФАЙЛ JAVASCRIPT)                               */
+/* FILE: assets/js/main.js (ФАЙЛ JAVASCRIPT) - ВЕРСІЯ 2.0                 */
 /* ======================================================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,13 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_problem: "Problem", nav_solution: "Solution", nav_demo: "Demo", nav_value: "Value",
             hero_title: "More than just entertainment.",
             hero_subtitle: "The \"Socrates\" concept transforms passive Netflix viewing into an active process of learning and self-development.",
-            hero_button: "Learn more",
-            problem_title: "A problem everyone knows",
-            problem_subtitle: "Modern streaming services offer endless choice, but this creates new challenges.",
+            problem_title: "Yes, the feeling is real.",
+            problem_subtitle: "Endless scrolling creates a familiar cycle. It all starts with two frustrations...",
             problem_card1_title: "Choice Paralysis",
-            problem_card1_text: "We spend more time searching than watching, and end up watching nothing at all.",
+            problem_card1_text: "Too many options, too little confidence in the choice.",
+            problem_card2_title: "Shallow Recommendations",
+            problem_card2_text: "Algorithms suggest what's popular, not what's useful for you.",
             problem_card3_title: "The Feeling of Wasted Time",
-            problem_card3_text: "The guilt from hours spent on shows instead of investing time in self-development. <b>This is the problem we are solving.</b>",
+            problem_card3_text: "This is the true cost of mindless scrolling.",
+            problem_final_statement: "\"Socrates\" is what solves this exact problem.",
             solution_title: "The Solution: Integration, Not Segregation",
             solution_text1: "\"Socrates\" is not a separate website, but a new layer of analytics and functionality seamlessly built into the familiar Netflix interface. We don't force users to change their habits — we enrich them.",
             solution_text2: "Our system analyzes film scripts to identify key educational themes, skills, and life lessons, then presents this information to the user at the moment of choice.",
@@ -43,13 +45,15 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_problem: "Problem", nav_solution: "Rozwiązanie", nav_demo: "Demo", nav_value: "Wartość",
             hero_title: "Więcej niż tylko rozrywka.",
             hero_subtitle: "Koncepcja \"Socrates\" przekształca pasywne oglądanie Netflixa w aktywny proces nauki i samorozwoju.",
-            hero_button: "Dowiedz się więcej",
-            problem_title: "Problem, który zna każdy",
-            problem_subtitle: "Nowoczesne serwisy streamingowe oferują nieograniczony wybór, ale to rodzi nowe wyzwania.",
+            problem_title: "Tak, to uczucie jest prawdziwe.",
+            problem_subtitle: "Niekończące się przewijanie tworzy znajomy cykl. Wszystko zaczyna się od dwóch frustracji...",
             problem_card1_title: "Paraliż decyzyjny",
-            problem_card1_text: "Spędzamy więcej czasu na szukaniu niż na oglądaniu, a w końcu nie oglądamy nic.",
+            problem_card1_text: "Zbyt wiele opcji, zbyt mało pewności co do wyboru.",
+            problem_card2_title: "Płytkie rekomendacje",
+            problem_card2_text: "Algorytmy sugerują to, co popularne, a nie to, co jest dla Ciebie przydatne.",
             problem_card3_title: "Poczucie straconego czasu",
-            problem_card3_text: "Poczucie winy z powodu godzin spędzonych na serialach zamiast inwestowania czasu w samorozwój. <b>To jest problem, który rozwiązujemy.</b>",
+            problem_card3_text: "To prawdziwa cena bezmyślnego przewijania.",
+            problem_final_statement: "Właśnie ten problem rozwiązuje \"Socrates\".",
             solution_title: "Rozwiązanie: Integracja, nie segregacja",
             solution_text1: "\"Socrates\" to nie osobna strona, ale nowa warstwa analityczna i funkcjonalna, płynnie wbudowana w znajomy interfejs Netflix. Nie zmuszamy użytkowników do zmiany nawyków — wzbogacamy je.",
             solution_text2: "Nasz system analizuje scenariusze filmowe, aby zidentyfikować kluczowe tematy edukacyjne, umiejętności i lekcje życiowe, a następnie prezentuje te informacje użytkownikowi w momencie wyboru.",
@@ -71,21 +75,59 @@ document.addEventListener('DOMContentLoaded', () => {
             footer_concept: "Koncepcja \"Project Socrates\".",
             footer_disclaimer: "Ta strona jest projektem demonstracyjnym i nie jest powiązana z firmą Netflix.",
             modal_learn_title: "Czego się nauczysz:",
+        },
+        uk: {
+            nav_problem: "Проблема", nav_solution: "Рішення", nav_demo: "Демо", nav_value: "Цінність",
+            hero_title: "Більше, ніж просто розваги.",
+            hero_subtitle: "Концепція \"Socrates\" перетворює пасивний перегляд Netflix на активний процес навчання та саморозвитку.",
+            problem_title: "Так, це відчуття реальне.",
+            problem_subtitle: "Нескінченний скролінг створює знайомий цикл. Все починається з двох розчарувань...",
+            problem_card1_title: "Параліч вибору",
+            problem_card1_text: "Занадто багато опцій, занадто мало впевненості у виборі.",
+            problem_card2_title: "Поверхневі рекомендації",
+            problem_card2_text: "Алгоритми пропонують популярне, а не корисне саме для вас.",
+            problem_card3_title: "Відчуття Втраченого Часу",
+            problem_card3_text: "Це справжня ціна бездумного скролінгу.",
+            problem_final_statement: "Саме цю проблему вирішує \"Socrates\".",
+            solution_title: "Рішення: Інтеграція, а не сегрегація",
+            solution_text1: "\"Socrates\" — це не окремий сайт, а новий шар аналітики та функціоналу, безшовно вбудований у знайомий інтерфейс Netflix. Ми не змушуємо користувача змінювати звички — ми збагачуємо їх.",
+            solution_text2: "Наша система аналізує сценарії фільмів, щоб виявити ключові освітні теми, навички та життєві уроки, а потім подає цю інформацію користувачу в момент вибору.",
+            demo_title: "Як це працює: Інтерактивний макет",
+            demo_subtitle: "Нижче наведено інтерактивну імітацію інтерфейсу Netflix з вбудованою функцією \"Socrates\". Натисніть на фільм.",
+            demo_shelf_title: "Навчайся та надихайся",
+            film1_tagline: "Дізнайтеся, як працюють фінансові ринки.",
+            film2_tagline: "Вивчіть уроки лідерства та інновацій.",
+            film3_tagline: "Навчіться системному вирішенню проблем.",
+            value_title: "Цінність для всіх",
+            value_user_title: "Для користувача",
+            value_user1: "Освіта та саморозвиток у зручному форматі.",
+            value_user2: "Економія часу та зменшення \"паралічу вибору\".",
+            value_user3: "Більш глибокий емоційний зв'язок з контентом.",
+            value_biz_title: "Для Netflix",
+            value_biz1: "Зменшення відтоку клієнтів (Churn Rate).",
+            value_biz2: "Підвищення залученості та часу в сервісі.",
+            value_biz3: "Унікальна ринкова перевага та позитивний PR.",
+            footer_concept: "Концепція \"Project Socrates\".",
+            footer_disclaimer: "Цей сайт є демонстраційним проєктом і не є афілійованим з Netflix.",
+            modal_learn_title: "Чого ви навчитесь:",
         }
     };
 
     const filmData = {
         "big-short": {
             en: { title: "The Big Short", synopsis: "A group of investors bet against the US mortgage market, predicting the 2008 global financial crisis.", learn: ["Understand the basics of mortgage-backed securities (MBS) and collateralized debt obligations (CDOs).", "Learn to recognize the signs of a financial bubble and mass market hysteria.", "See the importance of critical thinking and data analysis when everyone else is certain of the opposite."] },
-            pl: { title: "The Big Short", synopsis: "Grupa inwestorów obstawia przeciwko amerykańskiemu rynkowi hipotecznemu, przewidując światowy kryzys finansowy z 2008 roku.", learn: ["Zrozum podstawy papierów wartościowych zabezpieczonych hipoteką (MBS) i zobowiązań zabezpieczonych długiem (CDO).", "Naucz się rozpoznawać oznaki bańki finansowej i masowej histerii na rynku.", "Zobacz znaczenie krytycznego myślenia i analizy danych, gdy wszyscy wokół są pewni czegoś przeciwnego."] }
+            pl: { title: "The Big Short", synopsis: "Grupa inwestorów obstawia przeciwko amerykańskiemu rynkowi hipotecznemu, przewidując światowy kryzys finansowy z 2008 roku.", learn: ["Zrozum podstawy papierów wartościowych zabezpieczonych hipoteką (MBS) i zobowiązań zabezpieczonych długiem (CDO).", "Naucz się rozpoznawać oznaki bańki finansowej i masowej histerii na rynku.", "Zobacz znaczenie krytycznego myślenia i analizy danych, gdy wszyscy wokół są pewni czegoś przeciwnego."] },
+            uk: { title: "Гра на пониження", synopsis: "Група інвесторів робить ставку проти ринку нерухомості США, передбачивши світову фінансову кризу 2008 року.", learn: ["Зрозумійте основи іпотечних цінних паперів (MBS) та облігацій (CDO).", "Навчіться розпізнавати ознаки фінансової бульбашки та масової істерії на ринку.", "Подивіться на важливість критичного мислення та аналізу даних, коли всі навколо впевнені у зворотному."] }
         },
         "steve-jobs": {
             en: { title: "Steve Jobs", synopsis: "A behind-the-scenes look at three key Apple product launches, revealing the complex character of its founder.", learn: ["See the principles of product design and marketing that changed the world.", "Analyze a leadership style based on perfectionism and an uncompromising vision.", "Understand the importance of brand building and creating an emotional connection with the consumer."] },
-            pl: { title: "Steve Jobs", synopsis: "Spojrzenie zza kulis na trzy kluczowe premiery produktów Apple, które ujawniają złożony charakter jej założyciela.", learn: ["Zobacz zasady projektowania produktów i marketingu, które zmieniły świat.", "Przeanalizuj styl przywództwa oparty na perfekcjonizmie i bezkompromisowej wizji.", "Zrozum znaczenie budowania marki i tworzenia emocjonalnego związku z konsumentem."] }
+            pl: { title: "Steve Jobs", synopsis: "Spojrzenie zza kulis na trzy kluczowe premiery produktów Apple, które ujawniają złożony charakter jej założyciela.", learn: ["Zobacz zasady projektowania produktów i marketingu, które zmieniły świat.", "Przeanalizuj styl przywództwa oparty na perfekcjonizmie i bezkompromisowej wizji.", "Zrozum znaczenie budowania marki i tworzenia emocjonalnego związku z konsumentem."] },
+            uk: { title: "Стів Джобс", synopsis: "Залаштунковий погляд на три ключові презентації продуктів Apple, що розкривають складний характер її засновника.", learn: ["Подивіться на принципи продуктового дизайну та маркетингу, які змінили світ.", "Проаналізуйте стиль лідерства, що базується на перфекціонізмі та безкомпромісному баченні.", "Зрозумійте важливість побудови бренду та створення емоційного зв'язку зі споживачем."] }
         },
         "bills-brain": {
             en: { title: "Inside Bill's Brain", synopsis: "A documentary series about how Bill Gates thinks and how he tries to solve humanity's most complex problems.", learn: ["Learn about the approach to solving global problems like sanitation and climate change.", "See a thinking model that breaks down complex tasks into smaller, manageable parts.", "Understand the principles of a systematic approach and the importance of long-term planning."] },
-            pl: { title: "W głowie Billa Gatesa", synopsis: "Serial dokumentalny o tym, jak myśli Bill Gates i jak próbuje rozwiązać najbardziej złożone problemy ludzkości.", learn: ["Dowiedz się o podejściu do rozwiązywania globalnych problemów, takich jak warunki sanitarne i zmiany klimatu.", "Zobacz model myślenia, który dzieli złożone zadania na mniejsze, łatwiejsze do zarządzania części.", "Zrozum zasady systemowego podejścia i znaczenie długoterminowego planowania."] }
+            pl: { title: "W głowie Billa Gatesa", synopsis: "Serial dokumentalny o tym, jak myśli Bill Gates i jak próbuje rozwiązać najbardziej złożone problemy ludzkości.", learn: ["Dowiedz się o podejściu do rozwiązywania globalnych problemów, takich jak warunki sanitarne i zmiany klimatu.", "Zobacz model myślenia, który dzieli złożone zadania na mniejsze, łatwiejsze do zarządzania części.", "Zrozum zasady systemowego podejścia i znaczenie długoterminowego planowania."] },
+            uk: { title: "В голові Білла Гейтса", synopsis: "Документальний серіал про те, як мислить Білл Гейтс, і як він намагається вирішити найскладніші проблеми людства.", learn: ["Дізнайтеся про підхід до вирішення глобальних проблем, таких як санітарія та зміна клімату.", "Подивіться на модель мислення, що розбиває складні завдання на менші, керовані частини.", "Зрозумійте принципи системного підходу та важливість довгострокового планування."] }
         }
     };
 
@@ -165,5 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.15 });
     sections.forEach(section => observer.observe(section));
 
+    // Встановлюємо мову за замовчуванням при завантаженні (можна змінити на 'uk' або 'pl')
     setLanguage('en');
 });
